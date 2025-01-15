@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/reboot.css">
+    <title>Web Developers!</title>
+  </head>
+  <body>
+    <!-- navebar -->
+    <div class="sticky-top bg-white p-2 shadow" style="opacity: 95%;">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4" href="#">Web Developers!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ourteam">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-lg-end" style="width: 180px;">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#GetStartedModal">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="GetStartedModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get Started Now!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="ContactEmail" class="form-label">Enter Your Email For Newlatter</label>
+              <input type="email" class="form-control" id="ContactEmail" placeholder="name@example.com">
+            </div>
+            <button class="btn btn-primary mt-3">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- back to top -->
+     <a href="#" class="bg-warning rounded-circle text-dark d-flex justify-content-center align-items-center position-fixed" style="opacity: 85%; width: 54px; height: 54px; right: 10px; bottom: 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+      </svg>
+     </a>
+    <!-- header -->
+    <div class="py-4">
+      <header class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="display-4 mb-4">Build <span class="text-warning">reactive</span> websites easily!</h2>
+            <p class="lead text-muted mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolorem quam quisquam, velit ut maxime tempora inventore dicta saepe id sit.
+            </p>
+            <div class="text-center text-md-start">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#GetStartedModal">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" style="height: 500px; width: 550px;" src="img/header.png" alt="header image">
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- features -->
+    <div class="py-4 bg-primary" id="features">
+      <section class="container">
+        <h2 class="mt-5 text-center mb-3 text-primary">Features</h2>
+        <p class="mb-5 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis voluptatem id molestiae consectetur natus quidem, adipisci assumenda voluptatum dignissimos eius doloremque dolorem quis nisi, totam labore, excepturi minima ducimus.
+        </p>
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-center p-5">
+              <div class="card-body">
+                <svg class="text-primary mb-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                  <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111.756 8.43 1.68 8.43h1.682zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682zm6.749 1.682c0-.926.755-1.682 1.68-1.682S16 4.964 16 5.889s-.756 1.681-1.68 1.681h-1.681zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68s.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681z"/>
+                </svg>
+                <h5 class="card-title mb-2">Powerful</h5>
+                <p class="card-text lead text-muted fs-0">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card text-center p-5">
+              <div class="card-body">
+                <svg class="text-primary mb-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">
+                  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <h5 class="card-title mb-2">Growth</h5>
+                <p class="card-text lead text-muted fs-0">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card text-center p-5">
+              <div class="card-body">
+                <svg class="text-primary mb-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-hdd-network" viewBox="0 0 16 16">
+                  <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1m6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5"/>
+                </svg>
+                <h5 class="card-title mb-2">Network</h5>
+                <p class="card-text lead text-muted fs-0">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card text-center p-5">
+              <div class="card-body">
+                <svg class="text-primary mb-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
+                  <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525"/>
+                </svg>
+                <h5 class="card-title mb-2">Server</h5>
+                <p class="card-text lead text-muted fs-0">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card text-center p-5">
+              <div class="card-body">
+                <svg class="text-primary mb-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-cloud-arrow-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z"/>
+                  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                </svg>
+                <h5 class="card-title mb-2">Cloud</h5>
+                <p class="card-text lead text-muted fs-0">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="card text-center p-5">
+              <div class="card-body">
+                <svg class="text-primary mb-4" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                </svg>
+                <h5 class="card-title mb-2">Download</h5>
+                <p class="card-text lead text-muted fs-0">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- angular -->
+    <div class="py-4 mb-5">
+      <section class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="display-4 mb-4"><span class="text-dark">Suitable for</span> <span class="text-danger">big projects</span></h2>
+            <p class="lead mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolorem quam quisquam, velit ut maxime tempora inventore dicta saepe id sit.
+            </p>
+            <div class="text-center text-md-start">
+              <a href="#" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+                Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" style="height: 450px; width: 500px;" src="img/angular.png" alt="header image">
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- reactjs -->
+    <div class="py-4 mb-5" style="background-color: rgb(78, 1, 185);">
+      <section class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid" style="height: 450px; width: 500px;" src="img/react.png" alt="header image">
+          </div>
+          <div class="col-md-6">
+            <h2 class="display-4 mb-4 text-white">Be <span style="color: #61dbfb">Fast</span> and <span style="color: #61dbfb">reactive</span></h2>
+            <p class="lead mb-4 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolorem quam quisquam, velit ut maxime tempora inventore dicta saepe id sit.
+            </p>
+            <div class="text-center text-md-start">
+              <a href="#" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- posts -->
+    <div class="py-4 bg-primary" id="blog">
+      <section class="container">
+        <h2 class="mt-5 mb-3 text-center text-primary">Recent posts from our Blog</h2>
+        <p class="mb-5 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis voluptatem id molestiae consectetur natus quidem, adipisci assumenda voluptatum dignissimos eius doloremque dolorem quis nisi, totam labore, excepturi minima ducimus.
+        </p>
+        <div class="row g-4 mb-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="card mb-3 shadow">
+              <img src="img/post1.png" class="card-img-top" alt="post1 image">
+              <div class="card-body">
+                <p class="card-text"><small class="text-muted">Last updated 8 mins ago</small></p>
+                <p class="card-text" style="font-weight: bolder;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="$" class="card-text text-decoration-none fs-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card mb-3 shadow">
+              <img src="img/post2.png" class="card-img-top" alt="post1 image">
+              <div class="card-body">
+                <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                <p class="card-text" style="font-weight: bolder;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="$" class="card-text text-decoration-none fs-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card mb-3 shadow">
+              <img src="img/post3.png" class="card-img-top" alt="post1 image">
+              <div class="card-body">
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p class="card-text" style="font-weight: bolder;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="$" class="card-text text-decoration-none fs-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card mb-3 shadow">
+              <img src="img/post4.png" class="card-img-top" alt="post1 image">
+              <div class="card-body">
+                <p class="card-text"><small class="text-muted">Last updated 15 mins ago</small></p>
+                <p class="card-text" style="font-weight: bolder;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="$" class="card-text text-decoration-none fs-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+     <!-- our team -->
+    <div class="py-4" id="ourteam">
+    <section class="container">
+      <h2 class="mt-5 mb-3 text-center text-primary">Our Team</h2>
+      <p class="mb-5 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis voluptatem id molestiae consectetur natus quidem, adipisci assumenda voluptatum dignissimos eius doloremque dolorem quis nisi, totam labore, excepturi minima ducimus.
+      </p>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <img class="img-fluid rounded-circle mb-3 border p-2 h-50" style="width: 200px;" src="img/worker1.jpg" alt="team meambar image">
+          <h2>Deco Milan</h2>
+          <p>Founder</p>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center">
+          <img class="img-fluid rounded-circle mb-3 border p-2 h-50" style="width: 200px;" src="img/worker4.png" alt="team meambar image">
+          <h2>Liza Marko</h2>
+          <p>Developer</p>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center">
+          <img class="img-fluid rounded-circle mb-3 border p-2 h-50" style="width: 200px;" src="img/worker2.png" alt="team meambar image">
+          <h2>Johan Smith</h2>
+          <p>Designer</p>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center">
+          <img class="img-fluid rounded-circle mb-3 border p-2 h-50" style="width: 200px;" src="img/worker3.png" alt="team meambar image">
+          <h2>jonifer martines</h2>
+          <p>Manager</p>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg>
+              </a>
+            </li>
+            <li class="mx-1">
+              <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- question part -->
+    <div class="py-4 bg-primary">
+      <section class="container">
+        <h2 class="mt-5 text-center mb-3 text-primary">Frequently Asked Questions</h2>
+        <p class="mb-5 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis voluptatem id molestiae consectetur natus quidem, adipisci assumenda voluptatum dignissimos eius doloremque dolorem quis nisi, totam labore, excepturi minima ducimus.
+        </p>
+        <div class="accordion mb-4" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Question One #1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex excepturi vel, id exercitationem culpa aliquid ut at alias quis hic, sunt a sed tempore harum, pariatur sequi distinctio quibusdam adipisci!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Question Tow #2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, animi, quod fuga necessitatibus recusandae officiis incidunt ullam tempora ea suscipit veniam unde iusto perspiciatis et culpa obcaecati magni quas? Deleniti?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Question Three #3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste minus ex quidem accusantium adipisci, libero necessitatibus quasi vel ut! Fugiat culpa minima molestiae harum dolorem tempore sunt nostrum magni.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                Question Four #4
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, explicabo! Culpa odio iusto, explicabo consequatur sit earum ea repellendus aliquid, error excepturi nam minima accusantium adipisci inventore eaque enim recusandae.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                Question Five #5
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sunt perspiciatis dolorum doloribus pariatur, reprehenderit earum hic omnis voluptatum id vitae? Quaerat eius beatae perspiciatis unde repellendus porro adipisci nulla.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                Question Sex #6
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia quidem voluptatem iure ex placeat molestiae deserunt autem earum temporibus. Minima hic tempora cupiditate rerum corrupti voluptatem iste nam veritatis.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- contact us -->
+    <div class="py-4 bg" id="contact">
+      <section class="container">
+        <h2 class="mt-5 text-center mb-3 text-primary">Contact</h2>
+        <p class="mb-5 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis voluptatem id molestiae consectetur natus quidem, adipisci assumenda voluptatum dignissimos eius doloremque dolorem quis nisi, totam labore, excepturi minima ducimus.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 rounded justify-content-center">
+            <div class="row g-4">
+              <div class="col-md-6 rounded">
+                <div class="p-4 bg-primary">
+                  <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  <h2 class="mt-5">Address</h2>
+                  <div>A108 Adam Street.</div>
+                  <div>New York, NY 535022</div>
+                </div>
+              </div>
+              <div class="col-md-6 rounded">
+                <div class="bg-primary p-4">
+                  <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  <h2 class="mt-5">Address</h2>
+                  <div>A108 Adam Street.</div>
+                  <div>New York, NY 535022</div>
+                </div>
+              </div>
+              <div class="col-md-6 rounded">
+                <div class="bg-primary p-4">
+                  <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  <h2 class="mt-5">Address</h2>
+                  <div>A108 Adam Street.</div>
+                  <div>New York, NY 535022</div>
+                </div>
+              </div>
+              <div class="col-md-6 rounded">
+                <div class="bg-primary p-4">
+                  <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  <h2 class="mt-5">Address</h2>
+                  <div>A108 Adam Street.</div>
+                  <div>New York, NY 535022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="bg-primary p-4 rounded">
+              <div class="mb-3">
+                <label for="ContactFullname" class="form-label">FullName</label>
+                <input type="text" class="form-control" id="ContactFullname" placeholder="Ex: Zubair Amin">
+              </div>
+              <div class="mb-3">
+                <label for="ContactEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="ContactEmail" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="ContactComment" class="form-label">Your Comment</label>
+                <textarea class="form-control" id="ContactComment" rows="6"></textarea>
+              </div>
+              <button class="btn btn-primary mt-3" style="margin-bottom: 23px;">Send</button>
+            </div>
+          </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <div class="py-4 text-white" style="background-color: #081828;">
+      <footer class="container pt-5">
+        <div class="row py-4">
+          <div class="col-md-3">
+            <h2 class="mb-4">Web Developers!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel amet, ducimus error veritatis vero sint.</p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="mb-4 border-start border-3 ps-3 border-primary">Pages</h3>
+            <ul class="list-unstyled">
+              <li >
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Vue.js</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">React.js</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Our team</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="mb-4 border-start border-3 ps-3 border-primary">More</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Vue.js</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">React.js</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Our team</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="mb-4 border-start border-3 ps-3 border-primary">Posts</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Vue.js</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">React.js</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Our team</a>
+              </li>
+              <li>
+                <a class="text-decoration-none sty" style="color: #ddd;" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="text-center">Designed and Developed: <a class="text-decoration-none" style="color: #ddd;" href="#">Ahmad Zubair Amin</a></div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
